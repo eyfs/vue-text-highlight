@@ -41,8 +41,7 @@ export default {
           !isHighlighted
             ? text
             : <this.highlightComponent
-              class={['text__highlight', this.highlightClass]}
-              style={this.highlightStyle}
+              class={[this.highlightClass]}
               key={highlightIndex}
               index={highlightIndex}
               text={text}
@@ -86,10 +85,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss">
-.text__highlight {
-  background: rgb(255, 204, 0);
-  border-radius: 3px;
-}
-</style>
